@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+        <script type="text/javascript" src="/vendors/angular.js"></script>
+        <script src="vendors/angular-route.js"></script>
+        <script type="text/javascript" src="/scripts/client.js"></script>
+        <script type="text/javascript" src="/scripts/controllers/messages.controller.js"></script>
+        <script type="text/javascript" src="/scripts/services/messages.service.js"></script>
+</head>
+
+<body ng-app="MyApp">
+    <div>
+        <ul>
+            <li><a href="#!home">Home</a></li>
+            <li><a href="#!messages">messages</a></li>
+            
+        </ul>
+
+
+    </div>
+    <input type="text" placeholder="name">
+    <input type="text" placeholder="message">
+    <button>submit</button>
+    <ng-view></ng-view>
+
+</body>
+
+</html>
